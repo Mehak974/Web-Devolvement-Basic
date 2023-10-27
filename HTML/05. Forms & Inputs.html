@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<!-- Forms -->
+
+	<!-- method="POST" sent data of form to the back-end page and action defines the page(where to send data) -->
+
+	<h2>Signup Form without <i>Label & id Tags</i></h2>
+	<form action="login.py" method="POST">
+
+		<!-- type = type of input
+		name = name of input used in backend
+		value = text shown on input-->
+
+		Name: <input type="text" name="name"><br>
+
+		Email: <input type="email" name="email"><br>
+
+		Phone: <input type="number" name="phone"><br>
+
+		Gander: <input type="radio" name="Gender"> Male <input type="radio" name="Gender"> Female<br>
+		
+		City
+		<select name="city">
+			<option value="kasur">Kasur</option>
+			<option value="lahore">Lahore</option>
+		</select><br>
+
+		Date of Birth: <input type="date" name="DOB"><br>
+		
+		Write about yourself: <input type="textarea" name="textarea"><br>
+		
+		Recieve updates through email? <input type="checkbox" name="update"><br>
+		
+		<!-- send value of form to backend -->
+		<input type="submit" name="Signup" value="Signup"><br>
+		
+		<!-- reset data of form -->
+		<input type="Reset" value="Reset">
+	</form>
+
+
+	<h2>Signup Form with <i>Label & id Tags</i></h2>
+	<form action="login.py" method="POST">
+		<label for="name">Name</label>
+		<input type="text" name="name" id="name"><br>
+
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email"><br>
+
+		<label for="phone">Phone</label>
+		<input type="number" name="phone" id="phone"><br>
+
+		<label for="Gender">Gender</label>
+		<input type="radio" name="Gender" id="Gender"> Male <input type="radio" name="Gender"> Female<br>
+
+		<label for="city">City</label>
+		<select name="city" id="city">
+			<option value="kasur">Kasur</option>
+			<option value="lahore">Lahore</option>
+		</select><br>
+		
+		<label for="DOB">Date of Birth</label>
+		<input type="date" name="DOB" id="DOB"><br>
+		
+		<label for="about">Write about yourself</label>
+		<input type="textarea" name="about"><br>
+		
+		<label for="updates">Recieve updates through email? </label>
+		<input type="checkbox" name="updates" id="updates"><br>
+		
+		<!-- send value of form to backend -->
+		<input type="submit" name="Signup" value="Signup"><br>
+		
+		<!-- reset data of form -->
+		<input type="Reset" value="Reset">
+	</form>
+</body>
+</html>
